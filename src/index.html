@@ -9,47 +9,156 @@
 
 <body>
     <!-- navbar section -->
-    <header class="container m-auto">
-        <div class="w-full h-[80px] mt-5 flex m-auto justify-between items-center">
-            <a href="#" class="w-[175px] h-[50px]">
-                <img src="img/logo.png" alt="logo">
-            </a>
-            <div class="w-[794px] h-[50px] flex justify-between items-center">
-                <nav class="w-[514px] h-[21px] flex justify-between items-center font-semibold text-[18px]">
-                    <a href="#">Home</a>
-                    <a href="#">About Me</a>
-                    <a href="#">Service</a>
-                    <a href="#">Blog</a>
-                    <a href="#">Contact Me</a>
-                </nav>
-                <div class="w-[160px] h-[50px] flex justify-center items-center font-semibold text-[20px]">
-                    <button class="w-[160px] h-[50px] rounded-4xl text-white bg-[#0077FF] hover:bg-blue-400" type="button">Let's chat</button>
+    <nav class="container mx-auto">
+        <div class="border h-[48px] sm:h-[80px] px-2 flex justify-between items-center">
+            <div>
+                <img class="w-[131px] sm:w-[175px]" src="img/logo.svg" alt="logo">
+            </div>
+            <div class="w-[794px] lg:flex hidden justify-between items-center font-semibold pl-10">
+                <ul class="w-[514px] h-[21px] flex justify-between items-center text-[18px]">
+                    <li>Home</li>
+                    <li>About Me</li>
+                    <li>Service</li>
+                    <li>Blog</li>
+                    <li>Contact Me</li>
+                </ul>
+                <div class="w-[160px] h-[50px] text-[20px] flex">
+                    <button class="w-[160px] h-[50px] rounded-[50px] text-xl text-white bg-[#0077FF] hover:bg-blue-400"
+                        type="button">Let's chat
+                    </button>
+                </div>
+            </div>
+            <button class="lg:hidden block buttonToogle">
+                <img src="img/menu.svg" alt="menu">
+            </button>
+        </div>
+        <div class="mobileMenu hidden w-32 absolute right-0 mr-2">
+            <ul class="font-semibold text-[15px] text-center flex flex-col gap-1">
+                <li class="py-0.5 text-[#0077FF] border rounded-4xl">Home</li>
+                <li class="py-0.5 text-[#0077FF] border rounded-4xl">About Me</li>
+                <li class="py-0.5 text-[#0077FF] border rounded-4xl">Service</li>
+                <li class="py-0.5 text-[#0077FF] border rounded-4xl">Blog</li>
+                <li class="py-0.5 text-[#0077FF] border rounded-4xl">Contact Me</li>
+            </ul>
+            <button
+                class="w-full h-[40px] rounded-4xl font-semibold text-[15px] text-white bg-[#0077FF] hover:bg-blue-400 mt-2"
+                type="button">Let's chat
+            </button>
+        </div>
+    </nav>
+
+    <!-- hero section -->
+    <section class="container mx-auto">
+        <div
+            class="border w-full h-[887px] flex flex-col items-center lg:flex-row-reverse lg:h-[727px] lg:mt-[13px] lg:justify-evenly">
+            <div class="w-[350px] h-[354px] lg:w-[553px] lg:h-[560px]">
+                <img src="img/hero.png" alt="hero">
+            </div>
+            <div class="w-[390px] h-[484px] mt-5 flex flex-col lg:w-[624px] lg:h-[444px] lg:justify-between">
+                <div class="lg:w-[544px] lg:h-[344px] text-center lg:text-left">
+                    <h3 class="font-semibold text-xl lg:text-[25px]">Welcome to my Portfolio</h3>
+                    <h1 class="font-bold text-[50px]/13 mt-2 lg:text-[60px]/18 lg:w-[544px] lg:h-[225px]">Hi
+                        I'm<br><span class="text-[#0077FF] lg:text-[70px]/18">Robert Junior</span><br>Product Designer
+                    </h1>
+                    <p class="font-normal text-xl mt-3 lg:text-[25px] tracking-wider">Collaborating with highly skilled
+                        individuals, our
+                        agency delivers top-quality services.</p>
+                </div>
+                <div class="flex flex-col lg:flex-wrap gap-3.5 mt-6 lg:justify-between lg:w-[446px] lg:h-[50px]">
+                    <button
+                        class="w-full lg:w-[161px] h-[50px] rounded-[50px] text-white bg-[#0077FF] hover:bg-blue-400 font-semibold text-[20px]"
+                        type="button">Hire Me!</button>
+                    <button
+                        class="border w-full lg:w-[240px] h-[50px] rounded-[50px] text-[#0077FF] hover:bg-blue-100 font-semibold text-[20px] flex justify-center items-center gap-4"
+                        type="button">Download CV<img src="img/icon-download.png" alt="">
+                    </button>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
-    <!-- hero section
+    <!-- software section -->
+    <section class="border w-full h-[410px] lg:h-[180px] bg-[#F8F8F8]">
+        <div
+            class="border container m-auto h-[410px] lg:h-[180px] flex flex-col lg:flex-row justify-center items-center gap-6 lg:gap-2">
+            <div class="w-[267px] h-[50px]"><img src="img/logo-1.png" alt="jquery"></div>
+            <div class="w-[267px] h-[50px]"><img src="img/logo-2.png" alt="wordpress"></div>
+            <div class="w-[267px] h-[50px]"><img src="img/logo-3.png" alt="less"></div>
+            <div class="w-[267px] h-[50px]"><img src="img/logo-4.png" alt="sass"></div>
+            <div class="w-[267px] h-[50px]"><img src="img/logo-5.png" alt="spotify"></div>
+        </div>
+    </section>
+
+    <!-- about me -->
     <section class="container m-auto">
-        <div class="border ">
-            <div>
-                <div>
-                    <h3></h3>
-                    <h1></h1>
-                    <p></p>
-                </div>
-                <div>
-                    <button></button>
-                    <button></button>
-                </div>
+        <div
+            class="h-[1301px] lg:h-[871px] flex flex-col lg:flex-row justify-around items-center gap-3 relative">
+            <div class="hidden lg:block"><img class="h-[765px]w-[765px] absolute -bottom-40 -left-12 -z-10"
+                    src="img/ellipse.png" alt="ellipse">
             </div>
-            <div>
-                <img src="" alt="hero">
+            <div class="w-[350px] h-[347px] mt-10 lg:w-[627px] lg:h-[623px]"><img src="img/about-me.png"
+                    alt="about me">
+            </div>
+            <div
+                class="h-[854px] lg:w-[619px] lg:h-[671px]] flex flex-col items-center justify-around">
+                <div class="h-[358px] lg:w-[619px] lg:h-[258px] flex flex-col items-cente justify-around text-center lg:text-left">
+                    <h3 class="font-semibold text-lg lg:text-xl text-[#0077FF]">ABOUT ME</h3>
+                    <h1 class="h-[160px] font-bold text-[40px]/10 px-10 lg:text-[50px]/14 lg:p-0 lg:mt-2"><span class="text-[#0077FF]">20 Year's Experience</span><br>on Product Design</h1>
+                    <p class="font-normal text-lg max-w-md p-2 lg:max-w-3xl lg:h-[75px] lg:p-0">Hello there! I'm <span class="font-bold">Robert Junior</span>. I
+                        specialize in web design and development, and I'm deeply passionate and committed to my craft.
+                        With <span class="font-bold">20 years</span> of experience as a professional graphic designer.
+                    </p>
+                </div>
+                <div
+                    class="w-full h-[400px] lg:w-[619px] lg:h-[313px] flex flex-col items-center justify-between">
+                    <div
+                        class="w-[370px] flex flex-col lg:flex-wrap gap-3.5 lg:justify-between lg:w-[612px] lg:h-[50px]">
+                        <button
+                            class="w-full lg:w-[170px] h-[50px] rounded-[50px] text-white bg-[#0077FF] hover:bg-blue-400 font-semibold text-xl"
+                            type="button">Main Skills
+                        </button>
+                        <button
+                            class="border w-full lg:w-[196px] h-[50px] rounded-[50px] text-[#0077FF] hover:bg-blue-100 font-semibold text-xl flex justify-center items-center gap-4"
+                            type="button">Awards
+                        </button>
+                        <button class="border w-full lg:w-[196px] h-[50px] rounded-[50px] text-[#0077FF] hover:bg-blue-100 font-semibold text-xl
+                        flex justify-center items-center gap-4" type="button">Education
+                        </button>
+                    </div>
+                    <div class="w-full max-w-md p-2 lg:max-w-3xl">
+                        <div class="mb-1 text-lg font-medium">User Experience Design - UI/UX</div>
+                        <div class="w-full h-4 mb-4 bg-gray-200 rounded-full">
+                            <div class="h-4 bg-[#0077FF] rounded-full" style="width: 92%"></div>
+                        </div>
+                        <div class="mb-1 text-lg font-medium">Web&User Interface Design</div>
+                        <div class="w-full h-4 mb-4 bg-gray-200 rounded-full">
+                            <div class="h-4 bg-[#0077FF] rounded-full" style="width: 80%"></div>
+                        </div>
+                        <div class="mb-1 text-lg font-medium">Interaction Design - Animation</div>
+                        <div class="w-full h-4 mb-4 bg-gray-200 rounded-full">
+                            <div class="h-4 bg-[#0077FF] rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </section> -->
+    </section>
 
 
+
+
+
+
+    <script>
+        const buttonToogle = document.querySelector('.buttonToogle');
+        const mobileMenu = document.querySelector('.mobileMenu');
+
+        buttonToogle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+    <br><br><br>
 </body>
 
 </html>
