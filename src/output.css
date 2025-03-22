@@ -331,6 +331,12 @@
   .h-\[50px\] {
     height: 50px;
   }
+  .h-\[80px\] {
+    height: 80px;
+  }
+  .h-\[90px\] {
+    height: 90px;
+  }
   .h-\[113pc\] {
     height: 113pc;
   }
@@ -357,6 +363,15 @@
   }
   .h-\[171px\] {
     height: 171px;
+  }
+  .h-\[200px\] {
+    height: 200px;
+  }
+  .h-\[220px\] {
+    height: 220px;
+  }
+  .h-\[250px\] {
+    height: 250px;
   }
   .h-\[272px\] {
     height: 272px;
@@ -427,8 +442,14 @@
   .h-\[2500px\] {
     height: 2500px;
   }
+  .w-17 {
+    width: calc(var(--spacing) * 17);
+  }
   .w-32 {
     width: calc(var(--spacing) * 32);
+  }
+  .w-175 {
+    width: calc(var(--spacing) * 175);
   }
   .w-\[80px\] {
     width: 80px;
@@ -450,6 +471,12 @@
   }
   .w-\[160px\] {
     width: 160px;
+  }
+  .w-\[175\] {
+    width: 175;
+  }
+  .w-\[175px\] {
+    width: 175px;
   }
   .w-\[200px\] {
     width: 200px;
@@ -950,6 +977,11 @@
       height: 147px;
     }
   }
+  .lg\:h-\[150px\] {
+    @media (width >= 64rem) {
+      height: 150px;
+    }
+  }
   .lg\:h-\[180px\] {
     @media (width >= 64rem) {
       height: 180px;
@@ -1180,6 +1212,11 @@
       width: 826px;
     }
   }
+  .lg\:w-\[950px\] {
+    @media (width >= 64rem) {
+      width: 950px;
+    }
+  }
   .lg\:w-\[1278px\] {
     @media (width >= 64rem) {
       width: 1278px;
@@ -1240,6 +1277,16 @@
       justify-content: space-evenly;
     }
   }
+  .lg\:justify-normal {
+    @media (width >= 64rem) {
+      justify-content: normal;
+    }
+  }
+  .lg\:gap-1 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 1);
+    }
+  }
   .lg\:gap-2 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 2);
@@ -1248,6 +1295,11 @@
   .lg\:gap-3 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 3);
+    }
+  }
+  .lg\:gap-5 {
+    @media (width >= 64rem) {
+      gap: calc(var(--spacing) * 5);
     }
   }
   .lg\:gap-6 {
@@ -1335,6 +1387,11 @@
     @media (width >= 64rem) {
       font-size: var(--text-xl);
       line-height: var(--tw-leading, var(--text-xl--line-height));
+    }
+  }
+  .lg\:text-\[16px\] {
+    @media (width >= 64rem) {
+      font-size: 16px;
     }
   }
   .lg\:text-\[25px\] {
